@@ -11,7 +11,7 @@ function Nav() {
         </Link>
         <div className="flex items-center">
           <button className="text-lg">subscribe</button>
-          <button className="flex items-center ml-10">
+          <button className="flex items-center ml-14">
             <span className="text-lg">menu</span>
             <div className="w-7 h-7 ml-7 bg-yellow-200" />
           </button>
@@ -19,29 +19,32 @@ function Nav() {
       </div>
       <div className="flex justify-between items-start mt-4">
         <div>
-          <p className="text-sm opacity-60" style={{ maxWidth: 320 }}>
+          <p
+            className="text-sm font-medium text-text"
+            style={{ maxWidth: 360 }}
+          >
             Apps developer. Loves good and intuitive UX. Makes fun things to
             watch on YouTube.
           </p>
           <a
             href="mailto:me@yamankatby.com"
-            className="inline-block mt-2 font-serif"
+            className="inline-block mt-2 text-sm font-serif"
           >
             me@yamankatby.com
           </a>
         </div>
 
         <div className="flex flex-col items-end mr-14">
-          <a href="#" className="text-sm">
+          <a href="#" className="text-sm font-medium">
             work
           </a>
-          <a href="#" className="text-sm mt-1">
+          <a href="#" className="text-sm font-medium mt-1">
             resume
           </a>
-          <a href="#" className="text-sm text-primary mt-1">
+          <a href="#" className="text-sm font-medium text-primary mt-1">
             contact me
           </a>
-          <a href="#" className="text-sm mt-1">
+          <a href="#" className="text-sm font-medium mt-1">
             more
           </a>
         </div>
