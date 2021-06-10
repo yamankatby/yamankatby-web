@@ -46,18 +46,22 @@ function Footer() {
             </a>
           </div>
 
-          <div className="hidden md:block">
-            <a href="#" className="text-lg">
-              LinkedIn
+          <div className="flex mt-4 md:mt-0">
+            <a href="#">
+              <span className="hidden lg:inline text-lg">LinkedIn</span>
+              <img src="/linkedin.svg" className="lg:hidden" />
             </a>
-            <a href="#" className="text-lg ml-8">
-              GitHub
+            <a href="#" className="ml-8">
+              <span className="hidden lg:inline text-lg">GitHub</span>
+              <img src="/github.svg" className="lg:hidden" />
             </a>
-            <a href="#" className="text-lg ml-8">
-              Dribbble
+            <a href="#" className="ml-8">
+              <span className="hidden lg:inline text-lg">Dribbble</span>
+              <img src="/dribbble.svg" className="lg:hidden" />
             </a>
-            <a href="#" className="text-lg ml-8">
-              YouTube
+            <a href="#" className="ml-8">
+              <span className="hidden lg:inline text-lg">YouTube</span>
+              <img src="/youtube.svg" className="lg:hidden" />
             </a>
           </div>
         </div>

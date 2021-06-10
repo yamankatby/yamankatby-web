@@ -12,8 +12,8 @@ function Nav() {
         <div className="flex items-center">
           <button className="hidden sm:inline-block text-lg">subscribe</button>
           <button className="flex items-center ml-14">
-            <span className="hidden sm:inline text-lg">menu</span>
-            <div className="burger w-7 h-7 ml-7" />
+            <span className="hidden sm:inline text-lg mr-7">menu</span>
+            <div className="burger w-7 h-7" />
           </button>
         </div>
       </div>
