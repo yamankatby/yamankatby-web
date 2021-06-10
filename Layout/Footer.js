@@ -21,7 +21,7 @@ function Footer() {
               <a href="#" className="text-3xl font-serif font-medium">
                 yaman<span className="text-primary">akademi</span>
               </a>
-              <div className="w-7 h-7 ml-4 bg-yellow-200" />
+              <div className="arrow w-7 h-7 ml-4" />
             </div>
           </div>
         </div>

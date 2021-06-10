@@ -13,7 +13,7 @@ function Nav() {
           <button className="text-lg">subscribe</button>
           <button className="flex items-center ml-14">
             <span className="text-lg">menu</span>
-            <div className="w-7 h-7 ml-7 bg-yellow-200" />
+            <div className="burger w-7 h-7 ml-7" />
           </button>
         </div>
       </div>

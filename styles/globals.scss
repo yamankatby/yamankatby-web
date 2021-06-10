@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.burger {
+  @apply relative;
+
+  &::after,
+  &::before {
+    content: "";
+
+    @apply absolute w-full bg-black rounded-full transition-all duration-300;
+    height: 2px;
+  }
+
+  &::after {
+    @apply left-0;
+    top: 9px;
+  }
+
+  &::before {
+    @apply right-0;
+    top: 17px;
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      @apply w-9/12;
+    }
+  }
+}
+
+.arrow {
+  @apply relative border-t-2 border-r-2 border-black transition-transform duration-300;
+
+  &::after {
+    content: "";
+    @apply absolute bg-black;
+    right: -6px;
+    top: 12px;
+    width: 2.4rem;
+    height: 2px;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    transform: rotate(45deg);
+  }
+}
