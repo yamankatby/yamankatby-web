@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Nav() {
   return (
-    <nav className="p-14">
+    <nav className="2xl:container 2xl:mx-auto m-6 md:m-8 lg:m-10 xl:m-14">
       <div className="flex justify-between items-center">
         <Link href="/">
           <a href="#" className="text-2xl font-bold font-serif">
@@ -10,9 +10,9 @@ function Nav() {
           </a>
         </Link>
         <div className="flex items-center">
-          <button className="text-lg">subscribe</button>
+          <button className="hidden sm:inline-block text-lg">subscribe</button>
           <button className="flex items-center ml-14">
-            <span className="text-lg">menu</span>
+            <span className="hidden sm:inline text-lg">menu</span>
             <div className="burger w-7 h-7 ml-7" />
           </button>
         </div>
@@ -34,7 +34,7 @@ function Nav() {
           </a>
         </div>
 
-        <div className="flex flex-col items-end mr-14">
+        <div className="hidden sm:flex flex-col items-end mr-14">
           <a href="#" className="text-sm font-medium">
             work
           </a>
