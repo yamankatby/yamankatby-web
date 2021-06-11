@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function Nav({ setIsMoreModalIn, setIsResumeModalIn, setIsSubscribeModalIn }) {
+function Nav({ setIsMenuModalIn, setIsResumeModalIn, setIsSubscribeModalIn }) {
   return (
     <nav className="2xl:container 2xl:mx-auto m-6 md:m-8 lg:m-10 xl:m-14">
       <div className="flex justify-between items-center">
@@ -20,7 +20,7 @@ function Nav({ setIsMoreModalIn, setIsResumeModalIn, setIsSubscribeModalIn }) {
           <button
             className="flex items-center ml-14"
             title="Menu..."
-            onClick={() => setIsMoreModalIn(true)}
+            onClick={() => setIsMenuModalIn(true)}
           >
             <span className="hidden sm:inline text-lg mr-7">menu</span>
             <div className="burger w-7 h-7" />
@@ -69,7 +69,7 @@ function Nav({ setIsMoreModalIn, setIsResumeModalIn, setIsSubscribeModalIn }) {
           <button
             className="text-sm font-medium mt-1"
             title="More..."
-            onClick={() => setIsMoreModalIn(true)}
+            onClick={() => setIsMenuModalIn(true)}
           >
             more
           </button>

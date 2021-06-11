@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import Popup from "./Popup";
+import MenuModal from "./MenuModal";
+import SubscribeModal from "./SubscribeModal";
+import ResumeModal from "./ResumeModal";
 
 function Layout({ children }) {
-  const [isMoreModalIn, setIsMoreModalIn] = useState(false);
+  const [isMenuModalIn, setIsMenuModalIn] = useState(false);
   const [isResumeModalIn, setIsResumeModalIn] = useState(false);
   const [isSubscribeModalIn, setIsSubscribeModalIn] = useState(false);
 
@@ -12,14 +14,25 @@ function Layout({ children }) {
     <>
       <div className="flex flex-col min-h-screen">
         <Nav
-          setIsMoreModalIn={setIsMoreModalIn}
+          setIsMenuModalIn={setIsMenuModalIn}
           setIsResumeModalIn={setIsResumeModalIn}
           setIsSubscribeModalIn={setIsSubscribeModalIn}
         />
         <main className="flex-1">{children}</main>
         <Footer setIsResumeModalIn={setIsResumeModalIn} />
       </div>
-      <Popup isPopupIn={isMoreModalIn} setIsPopupIn={setIsMoreModalIn} />
+      <MenuModal
+        isMenuModalIn={isMenuModalIn}
+        setIsMenuModalIn={setIsMenuModalIn}
+      />
+      <SubscribeModal
+        isSubscribeModalIn={isSubscribeModalIn}
+        setIsSubscribeModalIn={setIsSubscribeModalIn}
+      />
+      <ResumeModal
+        isResumeModalIn={isResumeModalIn}
+        setIsResumeModalIn={setIsResumeModalIn}
+      />
     </>
   );
 }

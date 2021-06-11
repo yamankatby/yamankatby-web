@@ -51,7 +51,7 @@
   }
 }
 
-.popup {
+.modal {
   &-container {
     @apply w-full;
 
@@ -63,7 +63,7 @@
   &-enter {
     @apply opacity-0;
 
-    & > .popup-container {
+    & > .modal-container {
       transform: scale(0.8);
     }
   }
@@ -72,7 +72,7 @@
     @apply opacity-100;
     transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 
-    & > .popup-container {
+    & > .modal-container {
       transform: scale(1);
       transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     }
@@ -81,7 +81,7 @@
   &-exit {
     @apply opacity-100;
 
-    & > .popup-container {
+    & > .modal-container {
       transform: scale(1);
     }
   }
@@ -90,7 +90,7 @@
     @apply opacity-0;
     transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 
-    & > .popup-container {
+    & > .modal-container {
       transform: scale(0.8);
       transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     }
