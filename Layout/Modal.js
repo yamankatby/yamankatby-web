@@ -13,9 +13,13 @@ function Modal({ isModalIn, setIsModalIn, children }) {
         onClick={() => setIsModalIn(false)}
       >
         <div
-          className="modal-container h-full sm:h-auto p-6 md:p-8 lg:p-10 xl:p-14 bg-white"
+          className="modal-container relative h-full sm:h-auto p-6 md:p-8 lg:p-10 xl:p-14 bg-white"
           onClick={(e) => e.stopPropagation()}
         >
+          <button
+            className="modal-x absolute top-6 md:top-8 lg:top-10 xl:top-14 right-6 md:right-8 lg:right-10 xl:right-14 w-7 h-7"
+            onClick={() => setIsModalIn(false)}
+          />
           {children}
         </div>
       </div>
