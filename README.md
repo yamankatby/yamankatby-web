@@ -11,5 +11,5 @@ git pull https://github.com/yamankatby/yamankatby-web.git
 ```
 
 ```
-yarn dev
+yarn && yarn dev
 ```
